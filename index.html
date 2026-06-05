@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>314 W Audubon Dr — Nicole Atkinson</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Josefin+Sans:wght@200;300;400;600&display=swap" rel="stylesheet">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+
+:root {
+  --turquoise: #2BBFBF;
+  --turquoise-light: #5DD4D4;
+  --turquoise-pale: #E0F7F7;
+  --coral: #F4724A;
+  --coral-light: #F9987C;
+  --coral-pale: #FEE8E0;
+  --white: #FFFFFF;
+  --off-white: #FDFCFB;
+  --cream: #FAF7F3;
+  --text-dark: #1C3A3A;
+  --text-mid: #4A6B6B;
+  --text-light: #8AABAB;
+  --border: rgba(43,191,191,0.15);
+}
+
+body {
+  background: #E8F4F4;
+  font-family: 'Josefin Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrap {
+  max-width: 640px;
+  margin: 0 auto;
+  background: var(--off-white);
+}
+
+/* ── HEADER ── */
+.header {
+  background: var(--white);
+  padding: 1.75rem 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid var(--turquoise-pale);
+}
+
+.header-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--turquoise);
+  letter-spacing: 2px;
+}
+
+.header-title {
+  font-size: 8px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--text-light);
+  margin-top: 0.2rem;
+}
+
+.header-badge {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--turquoise-pale);
+  border: 2px solid var(--turquoise);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+}
+
+/* ── CINEMATIC OPENER ── */
+.opener {
+  position: relative;
+  height: 420px;
+  overflow: hidden;
+  background: var(--turquoise-pale);
+}
+
+.opener .ph {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(160deg, #C8EEEE 0%, #E0F7F7 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.opener .ph span {
+  font-size: 9px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--text-light);
+}
+
+.opener img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.opener-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(28,58,58,0.0) 40%, rgba(28,58,58,0.75) 100%);
+}
+
+.opener-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 2.5rem;
+}
+
+.opener-tag {
+  display: inline-block;
+  background: var(--coral);
+  color: var(--white);
+  font-size: 8px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding: 0.4rem 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.opener-address {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.8rem, 5vw, 2.8rem);
+  font-weight: 900;
+  color: var(--white);
+  line-height: 1.1;
+  margin-bottom: 0.4rem;
+}
+
+.opener-city {
+  font-size: 10px;
+  font-weight: 300;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.7);
+}
+
+/* ── STATS BAR ── */
+.stats {
+  display: flex;
+  background: var(--turquoise);
+}
+
+.stat {
+  flex: 1;
+  text-align: center;
+  padding: 1.25rem 0.5rem;
+  border-right: 1px solid rgba(255,255,255,0.2);
+}
+
+.stat:last-child { border-right: none; }
+
+.stat-num {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--white);
+  line-height: 1;
+}
+
+.stat-label {
+  font-size: 7px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.7);
+  margin-top: 0.25rem;
+}
+
+/* ── INTRO ── */
+.intro {
+  background: var(--white);
+  padding: 3rem 2.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.intro-quote {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-style: italic;
+  color: var(--text-dark);
+  line-height: 1.45;
+  margin-bottom: 1.25rem;
+}
+
+.intro-quote em {
+  color: var(--coral);
+  font-style: normal;
+}
+
+.intro-body {
+  font-size: 13px;
+  font-weight: 300;
+  letter-spacing: 0.3px;
+  color: var(--text-mid);
+  line-height: 2;
+}
+
+/* ── FEATURES ── */
+.features {
+  background: var(--cream);
+  padding: 2.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.section-label {
+  font-size: 8px;
+  font-weight: 600;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: var(--turquoise);
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.section-label::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 8px;
+}
+
+.feature-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  padding: 1.25rem 1rem;
+  text-align: center;
+}
+
+.feature-icon {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.feature-name {
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--text-dark);
+}
+
+/* ── GALLERY ── */
+.gallery {
+  background: var(--white);
+  padding: 2.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+}
+
+.photo-grid .ph {
+  background: linear-gradient(135deg, var(--turquoise-pale) 0%, #C8EEEE 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.photo-grid .ph span {
+  font-size: 8px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--text-light);
+}
+
+.photo-grid img,
+.photo-grid .ph { width: 100%; display: block; }
+
+.photo-grid .tall { height: 268px; grid-row: span 2; }
+.photo-grid .reg  { height: 131px; }
+.photo-grid .wide { grid-column: span 2; height: 210px; }
+
+/* ── PULL QUOTE ── */
+.pullquote {
+  background: var(--coral);
+  padding: 3rem 2.5rem;
+  text-align: center;
+}
+
+.pullquote-text {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  font-style: italic;
+  color: var(--white);
+  line-height: 1.5;
+  margin-bottom: 0.75rem;
+}
+
+.pullquote-sub {
+  font-size: 9px;
+  font-weight: 300;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.7);
+}
+
+/* ── VIDEO ── */
+.video-section {
+  background: var(--cream);
+  padding: 2.5rem;
+  border-bottom: 1px solid var(--border);
+  text-align: center;
+}
+
+.video-frame {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  background: linear-gradient(135deg, var(--turquoise-pale) 0%, #C8EEEE 100%);
+  margin-bottom: 1.5rem;
+  border: 1px solid var(--border);
+}
+
+.video-frame-inner {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.play-btn {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: var(--coral);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 24px rgba(244,114,74,0.35);
+}
+
+.play-btn::after {
+  content: '';
+  width: 0;
+  height: 0;
+  border-top: 11px solid transparent;
+  border-bottom: 11px solid transparent;
+  border-left: 18px solid white;
+  margin-left: 4px;
+}
+
+.video-label {
+  font-size: 8px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--text-light);
+}
+
+.video-caption {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.2rem;
+  font-style: italic;
+  color: var(--text-dark);
+  margin-bottom: 0.5rem;
+}
+
+.video-sub {
+  font-size: 11px;
+  font-weight: 300;
+  color: var(--text-mid);
+  line-height: 1.9;
+}
+
+/* ── CTA ── */
+.cta {
+  background: var(--turquoise);
+  padding: 3.5rem 2.5rem;
+  text-align: center;
+}
+
+.cta-heading {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  font-weight: 900;
+  color: var(--white);
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.cta-heading span {
+  font-style: italic;
+  color: var(--coral-pale);
+}
+
+.cta-body {
+  font-size: 13px;
+  font-weight: 300;
+  color: rgba(255,255,255,0.8);
+  line-height: 2;
+  max-width: 380px;
+  margin: 0 auto 2rem;
+}
+
+.cta-btn {
+  display: inline-block;
+  padding: 1rem 3rem;
+  background: var(--white);
+  color: var(--turquoise);
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+/* ── FOOTER ── */
+footer {
+  background: var(--text-dark);
+  padding: 2rem 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem;
+  color: var(--turquoise-light);
+  letter-spacing: 2px;
+}
+
+.footer-meta {
+  font-size: 8px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.35);
+  text-align: right;
+  line-height: 1.8;
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div>
+      <div class="header-name">Nicole Atkinson</div>
+      <div class="header-title">Parks Place Real Estate &nbsp;·&nbsp; Fresno, CA</div>
+    </div>
+    <img src="https://assets.cdn.filesafe.space/fvBWKs3nL1HkBPZUKboX/media/6a2357bffc95b24549909996.png" alt="Parks Place Real Estate" style="height:60px;width:auto;display:block;">
+  </div>
+
+  <!-- OPENER -->
+  <div class="opener">
+    <img src="https://assets.cdn.filesafe.space/fvBWKs3nL1HkBPZUKboX/media/6a234b8ada24932f122d265f.jpg" alt="314 W Audubon Dr">
+    <div class="opener-overlay"></div>
+    <div class="opener-content">
+      <div class="opener-tag">Now Available</div>
+      <h1 class="opener-address">314 W Audubon Dr</h1>
+      <p class="opener-city">Fresno, California &nbsp;·&nbsp; 93711</p>
+    </div>
+  </div>
+
+  <!-- STATS -->
+  <div class="stats">
+    <div class="stat"><div class="stat-num">4</div><div class="stat-label">Bedrooms</div></div>
+    <div class="stat"><div class="stat-num">3</div><div class="stat-label">Bathrooms</div></div>
+    <div class="stat"><div class="stat-num">6+</div><div class="stat-label">Features</div></div>
+    <div class="stat"><div class="stat-num">93711</div><div class="stat-label">Zip Code</div></div>
+  </div>
+
+  <!-- VIDEO -->
+  <div class="video-section">
+    <p class="section-label">Video Tour</p>
+    <div class="video-frame">
+      <video controls style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;" poster="https://assets.cdn.filesafe.space/fvBWKs3nL1HkBPZUKboX/media/6a234b8ada24932f122d265f.jpg">
+        <source src="https://assets.cdn.filesafe.space/fvBWKs3nL1HkBPZUKboX/media/6a234caefc95b245498ff3d7.mov" type="video/mp4">
+      </video>
+    </div>
+    <p class="video-caption">Take the full tour from anywhere.</p>
+    <p class="video-sub">Walk every room, feel the flow of this space, and experience its surroundings.</p>
+  </div>
+
+  <!-- INTRO -->
+  <div class="intro">
+    <p class="intro-quote">Some homes are built to shelter.<br>This one was built to <em>live in.</em></p>
+    <p class="intro-body">Tucked into one of Fresno's most desirable zip codes, 314 W Audubon Drive is the rare home that checks every box. Designed the way real people actually live: conveniently located, great for entertaining, working from home, unwinding, and everything in between.</p>
+  </div>
+
+  <!-- FEATURES -->
+  <div class="features">
+    <p class="section-label">Property Highlights</p>
+    <div class="features-grid">
+      <div class="feature-card">
+        <span class="feature-icon">🏊</span>
+        <div class="feature-name">Private Pool</div>
+      </div>
+      <div class="feature-card">
+        <span class="feature-icon">🍹</span>
+        <div class="feature-name">Built-In Bar</div>
+      </div>
+      <div class="feature-card">
+        <span class="feature-icon">🍳</span>
+        <div class="feature-name">Outdoor Kitchen</div>
+      </div>
+      <div class="feature-card">
+        <span class="feature-icon">💼</span>
+        <div class="feature-name">Home Office</div>
+      </div>
+      <div class="feature-card">
+        <span class="feature-icon">🚐</span>
+        <div class="feature-name">RV Access</div>
+      </div>
+      <div class="feature-card">
+        <span class="feature-icon">🏡</span>
+        <div class="feature-name">4 Bed / 3 Bath</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- GALLERY -->
+  <div class="gallery">
+    <p class="section-label">Inside the Home</p>
+    <div class="photo-grid">
+      <!-- Row 1: Photo 1 landscape full width -->
+      <img src="https://assets.cdn.filesafe.space/fvBWKs3nL1HkBPZUKboX/media/6a234b50fc95b245498fdb95.jpg" alt="Photo 1" style="grid-column:span 2;width:100%;height:240px;object-fit:cover;display:block;">
+      <!-- Row 2: Photos 2 & 3 side by side -->
+      <img src="https://assets.cdn.filesafe.space/fvBWKs3nL1HkBPZUKboX/media/6a234ba75f72b50cf84fb237.jpg" alt="Photo 2" style="width:100%;height:200px;object-fit:cover;display:block;">
+      <img src="https://assets.cdn.filesafe.space/fvBWKs3nL1HkBPZUKboX/media/6a234b965f72b50cf84fb127.jpg" alt="Photo 3" style="width:100%;height:200px;object-fit:cover;display:block;">
+      <!-- Row 3: Photos 4 & 5 side by side -->
+      <img src="https://assets.cdn.filesafe.space/fvBWKs3nL1HkBPZUKboX/media/6a234b906a06f03d4479cf5c.jpg" alt="Photo 4" style="width:100%;height:200px;object-fit:cover;display:block;">
+      <img src="https://assets.cdn.filesafe.space/fvBWKs3nL1HkBPZUKboX/media/6a234ba1f607d4002b9a1a6f.jpg" alt="Photo 5" style="width:100%;height:200px;object-fit:cover;display:block;">
+      <!-- Row 4: Photo 6 full width -->
+      <img src="https://assets.cdn.filesafe.space/fvBWKs3nL1HkBPZUKboX/media/6a234bb3e8bb5ac427ef24fb.jpg" alt="Photo 6" style="grid-column:span 2;width:100%;height:240px;object-fit:cover;display:block;">
+      <!-- Row 5: Photos 7 & 8 side by side -->
+      <img src="https://assets.cdn.filesafe.space/fvBWKs3nL1HkBPZUKboX/media/6a234b6425d536ee37ecd2f3.jpg" alt="Photo 7" style="width:100%;height:200px;object-fit:cover;display:block;">
+      <img src="https://assets.cdn.filesafe.space/fvBWKs3nL1HkBPZUKboX/media/6a234b8ada24932f122d265f.jpg" alt="Photo 8" style="width:100%;height:200px;object-fit:cover;display:block;">
+    </div>
+  </div>
+
+  <!-- PULL QUOTE -->
+  <div class="pullquote">
+    <p class="pullquote-text">"A Home Designed For Entertaining, Privacy, and Every Day Living."</p>
+    <p class="pullquote-sub">Nicole Atkinson &nbsp;·&nbsp; Parks Place Real Estate</p>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta">
+    <h2 class="cta-heading">Ready to see it<br><span>in person?</span></h2>
+    <p class="cta-body">Homes like this move fast. Reach out directly and let's get you through the door before someone else does.</p>
+    <a href="tel:5592365658" class="cta-btn">Call or Text Nicole — 559-236-5658</a>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-name">Nicole Atkinson</div>
+    <div class="footer-meta">Parks Place Real Estate<br>Fresno, California</div>
+  </footer>
+
+</div>
+</body>
+</html>
